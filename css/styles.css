@@ -157,3 +157,76 @@ a {
 .btn-color-2:hover {
     background-color: var(--darkSecondary);
 }
+
+/*=============== Header ===============*/
+
+.header {
+    padding-top: 5rem;
+}
+
+.header-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .header-grid {
+        flex-direction: row;
+        justify-content: space-between;  
+    }
+}
+
+/*=============== Social ===============*/
+
+.social {
+    margin: 5rem 0;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .social {
+        margin: 0;
+    }
+}
+
+.social a::before {
+    content: '';
+    padding: 2rem;
+    display: inline-block;
+}
+
+.social a[href*="facebook.com"]::before {
+    background-image: url(../img/icono_facebook.svg); 
+}
+
+.social a[href*="twitter.com"]::before {
+    background-image: url(../img/icono_twitter.svg); 
+}
+
+.social a[href*="instagram.com"]::before {
+    background-image: url(../img/icono_instagram.svg); 
+}
+
+.social a[href*="youtube.com"]::before {
+    background-image: url(../img/icono_youtube.svg); 
+}
+
+.social a[href*="tiktok.com"]::before {
+    background-image: url(../img/icono_tiktok.svg); 
+}
+
+.social a[href*="pinterest.com"]::before {
+    background-image: url(../img/icono_pinterest.svg); 
+}
+
+.social span {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    display: block;
+}
