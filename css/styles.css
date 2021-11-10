@@ -271,3 +271,31 @@ a {
         margin-bottom: 0;
     }
 }
+
+/*=============== Swiper ===============*/
+
+.swiper-slide {
+    height: 100%;
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+.swiper img {
+    width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--white);
+}
+
+.swiper-pagination-bullet{
+    background-color: var(--white);
+    opacity: .5;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary);
+}
