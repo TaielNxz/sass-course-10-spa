@@ -76,6 +76,7 @@ function imagesAvif() {
 function dev() {
     watch( 'src/css/*.css', css );
     watch( '*.html', html );
+    watch( 'src/js/*.js', js );
     watch( 'src/img/*', images );
 }
 
