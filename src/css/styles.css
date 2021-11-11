@@ -373,6 +373,11 @@ a {
 
 .hours {
   color: var(--white);
+  background-repeat: no-repeat;
+  background-position: center, bottom center;
+}
+
+.notavif.notweb .hours {
   background-image: linear-gradient(
       to bottom,
       var(--primary) 0%,
@@ -380,12 +385,34 @@ a {
       transparent 50%
     ),
     url(../img/bg_horarios.jpg);
-  background-repeat: no-repeat;
-  background-position: center, bottom center;
+}
+
+.webp .hours {
+  background-image: linear-gradient(
+      to bottom,
+      var(--primary) 0%,
+      var(--primary) 50%,
+      transparent 50%
+    ),
+    url(../img/bg_horarios.webp);
+}
+
+.avif .hours {
+  background-image: linear-gradient(
+      to bottom,
+      var(--primary) 0%,
+      var(--primary) 50%,
+      transparent 50%
+    ),
+    url(../img/bg_horarios.avif);
 }
 
 @media (min-width: 768px) {
   .hours {
+    background-position: center, top right;
+  }
+
+  .notavif.notweb .hours {
     background-image: linear-gradient(
         to right,
         var(--primary) 0%,
@@ -393,7 +420,26 @@ a {
         transparent 50%
       ),
       url(../img/bg_horarios.jpg);
-    background-position: center, top right;
+  }
+
+  .webp .hours {
+    background-image: linear-gradient(
+        to right,
+        var(--primary) 0%,
+        var(--primary) 50%,
+        transparent 50%
+      ),
+      url(../img/bg_horarios.webp);
+  }
+
+  .avif .hours {
+    background-image: linear-gradient(
+        to right,
+        var(--primary) 0%,
+        var(--primary) 50%,
+        transparent 50%
+      ),
+      url(../img/bg_horarios.avif);
   }
 }
 
@@ -516,10 +562,21 @@ a {
 .appointment {
   padding: 5rem 0;
   text-align: center;
-  background-image: url(../img/bg_citas.jpg);
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+}
+
+.notavif.notweb .appointment {
+  background-image: url(../img/bg_citas.jpg);
+}
+
+.webp .appointment {
+  background-image: url(../img/bg_citas.webp);
+}
+
+.avif .appointment {
+  background-image: url(../img/bg_citas.avif);
 }
 
 .appointment h2 {
